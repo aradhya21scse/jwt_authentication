@@ -10,7 +10,7 @@ class AdminController extends BaseController
 {
     protected $userModel;
 
-    public function __construct()
+    public function __construct() 
     {
         $this->userModel = new UserModel();
     }
@@ -26,7 +26,11 @@ class AdminController extends BaseController
 }
 
 
+<<<<<<< HEAD
 private function requireAdmin() //check for admin 
+=======
+private function requireAdmin()//to check for admin
+>>>>>>> 51a653a551d62af92357d969975133c174d91a54
 {
     $header = $this->request->getHeaderLine('Authorization');   //getting authourization header
     $token = str_replace('Bearer ', '', $header); //removing bearer and extracting only the token part from the header
