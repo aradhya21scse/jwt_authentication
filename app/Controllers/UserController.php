@@ -19,15 +19,15 @@ class UserController extends BaseController
     }
 
 
-    public function register()
+    public function register() //register function to register user 
     {
         $data = $this->request->getJSON(true);
 
-        $Result = $this->validator->validateReg($data);
+        $Result = $this->validator->validateReg($data);//object of validateReg function in UserValidation Controller
         if (!$Result) {
             return $this->response->setJSON($Result)->setStatusCode(400);
         }
-        $existingUser = $this->userModel->getUserDataByEmail($data['email']);
+        $existingUser = $this->userModel->getUserDataByEmail($data['email']); //check for existing user son they cannot register again
         if ($existingUser) {
             return $this->response->setJSON([
                 'status' => false,
@@ -38,14 +38,14 @@ class UserController extends BaseController
         $userData = [
             'username' => $data['username'],
             'email' => $data['email'],
-            'password' => password_hash($data['password'], PASSWORD_DEFAULT),
+            'password' => password_hash($data['password'], PASSWORD_DEFAULT), 
         ];
 
-        $this->userModel->saveUserDataInDB($userData);
+        $this->userModel->saveUserDataInDB($userData); //model function is used to insert data
         return $this->response->setJSON(['status' => true, 'message' => 'User registered successfully.']);
     }
 
-    public function login()
+    public function login()//login function to login and token generation
     {
         $data = $this->request->getJSON(true);
         $Result = $this->validator->validateLogin($data);
@@ -61,11 +61,11 @@ class UserController extends BaseController
     
     
         $user = $this->userModel->getUserDataByEmail($data['email']);
-        if (!$user || !password_verify($data['password'], $user->password)) {
+        if (!$user || !password_verify($data['password'], $user->password)) {   
             return $this->response->setJSON([
                 'status' => false,
                 'message' => 'Invalid email or password.'
-            ])->setStatusCode(401);
+            ])->setStatusCode(401);   
         }
     
         $payload = [
@@ -74,7 +74,8 @@ class UserController extends BaseController
             'role' => $user->role
         ];
     
-        $jwt = JWT::encode($payload, getenv('JWT_SECRET'), 'HS256');
+        $jwt = JWT::encode($payload, getenv('JWT_SECRET'), 'HS256'); //jwt  token is generated here
+
         return $this->response->setJSON(['status' => true, 'token' => $jwt]);
     }
     

@@ -15,7 +15,7 @@ class AdminController extends BaseController
         $this->userModel = new UserModel();
     }
 
-    private function validateJWT($token)
+    private function validateJWT($token)//function to validate and 
 {
     try {
         $decoded = JWT::decode($token, new Key(getenv('JWT_SECRET'), 'HS256'));
@@ -26,10 +26,10 @@ class AdminController extends BaseController
 }
 
 
-private function requireAdmin()
+private function requireAdmin() //check for admin 
 {
-    $header = $this->request->getHeaderLine('Authorization');
-    $token = str_replace('Bearer ', '', $header);
+    $header = $this->request->getHeaderLine('Authorization');   //getting authourization header
+    $token = str_replace('Bearer ', '', $header); //removing bearer and extracting only the token part from the header
     $decoded = $this->validateJWT($token);
 
     if (!$decoded || $decoded->role !== 'admin') {
@@ -41,7 +41,7 @@ private function requireAdmin()
     return true; 
 }
 
-    private function requireUser()
+    private function requireUser()//to check for user
     {
         $header = $this->request->getHeaderLine('Authorization');
         $token = str_replace('Bearer ', '', $header);
@@ -53,19 +53,13 @@ private function requireAdmin()
 
         return $decoded; 
     }
-    public function UserDashboard()
+    public function UserDashboard()//user dashboard access and displaying details
         {
             $decoded = $this->requireUser();
             if (!$decoded) {
                 return $this->response->setJSON([
                     'status' => false,
                     'message' => 'Unauthorized access. Please login.'
-                ])->setStatusCode(403);
-            }
-            if($decoded->role!='user'){
-                return $this->response->setJSON([
-                    'status' => false,
-                    'message' => 'Unauthorized access Admin cannot access user panel. Please login.'
                 ])->setStatusCode(403);
             }
             return $this->response->setJSON([
@@ -96,7 +90,7 @@ private function requireAdmin()
 
     public function addUser()
     {
-        $adminCheck = $this->requireAdmin();
+        $adminCheck = $this->requireAdmin();   //checking if admin then only can add user
         if ($adminCheck !== true) {
             return $adminCheck; 
         }
@@ -117,7 +111,7 @@ private function requireAdmin()
         return $this->response->setJSON(['status' => true, 'message' => 'User added successfully.']);
     }
 
-    public function updateUser($id)
+    public function updateUser($id)//updating user only by admin
     {
         $adminCheck = $this->requireAdmin();
         if ($adminCheck !== true) {
@@ -126,9 +120,9 @@ private function requireAdmin()
     
         $data = $this->request->getJSON(true);
         
-        $existingUser = $this->userModel->findUserById($id);
+        $existingUser = $this->userModel->findUserById($id);    //getting user by id
         if (!$existingUser) {
-            return $this->response->setJSON(['status' => false, 'message' => 'User not found.'])->setStatusCode(404);
+            return $this->response->setJSON(['status' => false, 'message' => 'User not found.'])->setStatusCode(404); 
         }
         $data = $this->request->getJSON(true);
         $existingEmail=$this->userModel->getUserDataByEmail($data['email']);
@@ -142,7 +136,7 @@ private function requireAdmin()
         }
     }
     
-    public function deleteUser($id)
+    public function deleteUser($id)//deleting only by user
     {
         $adminCheck = $this->requireAdmin();
         if ($adminCheck !== true) {
