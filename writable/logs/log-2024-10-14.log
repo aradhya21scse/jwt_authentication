@@ -1,0 +1,436 @@
+CRITICAL - 2024-10-14 05:59:53 --> Error: Firebase\JWT\JWT::decode(): Argument #3 ($headers) cannot be passed by reference
+[Method: POST, Route: login]
+in APPPATH\Controllers\UserController.php on line 85.
+ 1 APPPATH\Controllers\UserController.php(32): App\Controllers\UserController->validateJWT('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ5b3VyX2lzc3VlciIsImF1ZCI6InlvdXJfYXVkaWVuY2UiLCJpYXQiOjE3Mjg4ODUyNTQsImV4cCI6MTcyODg4ODg1NCwiZW1haWwiOiJhcmFkaHlhQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiJ9.-EFEghbR5z8rp_jr8ClO_smWUYA-ZQrWcksTZRqebL4')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\api\\public\\index.php')
+CRITICAL - 2024-10-14 06:02:29 --> Error: Firebase\JWT\JWT::decode(): Argument #3 ($headers) cannot be passed by reference
+[Method: POST, Route: login]
+in APPPATH\Controllers\UserController.php on line 83.
+ 1 APPPATH\Controllers\UserController.php(32): App\Controllers\UserController->validateJWT('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ5b3VyX2lzc3VlciIsImF1ZCI6InlvdXJfYXVkaWVuY2UiLCJpYXQiOjE3Mjg4ODUyNTQsImV4cCI6MTcyODg4ODg1NCwiZW1haWwiOiJhcmFkaHlhQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiJ9.-EFEghbR5z8rp_jr8ClO_smWUYA-ZQrWcksTZRqebL4')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\api\\public\\index.php')
+CRITICAL - 2024-10-14 06:03:24 --> Error: Firebase\JWT\JWT::decode(): Argument #3 ($headers) cannot be passed by reference
+[Method: POST, Route: login]
+in APPPATH\Controllers\UserController.php on line 83.
+ 1 APPPATH\Controllers\UserController.php(32): App\Controllers\UserController->validateJWT('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ5b3VyX2lzc3VlciIsImF1ZCI6InlvdXJfYXVkaWVuY2UiLCJpYXQiOjE3Mjg4ODU3NzcsImV4cCI6MTcyODg4OTM3NywiZW1haWwiOiJhcmFkaHlhQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiJ9.RLJKmsn5ErRaho2STRasFnTc_B_R6cLeNe0DwbByWmg')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\api\\public\\index.php')
+CRITICAL - 2024-10-14 06:19:29 --> Error: Firebase\JWT\JWT::decode(): Argument #3 ($headers) cannot be passed by reference
+[Method: GET, Route: userinfo]
+in APPPATH\Controllers\UserController.php on line 90.
+ 1 APPPATH\Controllers\UserController.php(66): App\Controllers\UserController->validateJWT('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ5b3VyX2lzc3VlciIsImF1ZCI6InlvdXJfYXVkaWVuY2UiLCJpYXQiOjE3Mjg4ODY3NDYsImV4cCI6MTcyODg5MDM0NiwiZW1haWwiOiJhcmFkaHlhQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiJ9.XXHJ87OpVtszSh2UIaTUilumnPffjoReF0B50CIpQGY')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->getUserInfo()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\api\\public\\index.php')
+CRITICAL - 2024-10-14 06:19:57 --> Error: Firebase\JWT\JWT::decode(): Argument #3 ($headers) cannot be passed by reference
+[Method: GET, Route: userinfo]
+in APPPATH\Controllers\UserController.php on line 90.
+ 1 APPPATH\Controllers\UserController.php(66): App\Controllers\UserController->validateJWT('Basic YXJhZGh5YUBnbWFpbC5jb206MTIzNDU=')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->getUserInfo()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\api\\public\\index.php')
+CRITICAL - 2024-10-14 06:20:00 --> Error: Firebase\JWT\JWT::decode(): Argument #3 ($headers) cannot be passed by reference
+[Method: GET, Route: userinfo]
+in APPPATH\Controllers\UserController.php on line 90.
+ 1 APPPATH\Controllers\UserController.php(66): App\Controllers\UserController->validateJWT('Basic YXJhZGh5YUBnbWFpbC5jb206MTIzNA==')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->getUserInfo()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\api\\public\\index.php')
+CRITICAL - 2024-10-14 06:20:07 --> Error: Firebase\JWT\JWT::decode(): Argument #3 ($headers) cannot be passed by reference
+[Method: GET, Route: userinfo]
+in APPPATH\Controllers\UserController.php on line 90.
+ 1 APPPATH\Controllers\UserController.php(66): App\Controllers\UserController->validateJWT('Basic YXJhZGh5YUBnbWFpbC5jb206MTIzNDU=')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->getUserInfo()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\api\\public\\index.php')
+CRITICAL - 2024-10-14 06:20:27 --> Error: Firebase\JWT\JWT::decode(): Argument #3 ($headers) cannot be passed by reference
+[Method: GET, Route: userinfo]
+in APPPATH\Controllers\UserController.php on line 90.
+ 1 APPPATH\Controllers\UserController.php(66): App\Controllers\UserController->validateJWT('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ5b3VyX2lzc3VlciIsImF1ZCI6InlvdXJfYXVkaWVuY2UiLCJpYXQiOjE3Mjg4ODY3NDYsImV4cCI6MTcyODg5MDM0NiwiZW1haWwiOiJhcmFkaHlhQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiJ9.XXHJ87OpVtszSh2UIaTUilumnPffjoReF0B50CIpQGY')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->getUserInfo()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\api\\public\\index.php')
+CRITICAL - 2024-10-14 06:21:52 --> Error: Firebase\JWT\JWT::decode(): Argument #3 ($headers) cannot be passed by reference
+[Method: POST, Route: login]
+in APPPATH\Controllers\UserController.php on line 85.
+ 1 APPPATH\Controllers\UserController.php(34): App\Controllers\UserController->validateJWT('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ5b3VyX2lzc3VlciIsImF1ZCI6InlvdXJfYXVkaWVuY2UiLCJpYXQiOjE3Mjg4ODY3NDYsImV4cCI6MTcyODg5MDM0NiwiZW1haWwiOiJhcmFkaHlhQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiJ9.XXHJ87OpVtszSh2UIaTUilumnPffjoReF0B50CIpQGY')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\api\\public\\index.php')
+CRITICAL - 2024-10-14 06:22:02 --> Error: Firebase\JWT\JWT::decode(): Argument #3 ($headers) cannot be passed by reference
+[Method: POST, Route: login]
+in APPPATH\Controllers\UserController.php on line 85.
+ 1 APPPATH\Controllers\UserController.php(34): App\Controllers\UserController->validateJWT('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ5b3VyX2lzc3VlciIsImF1ZCI6InlvdXJfYXVkaWVuY2UiLCJpYXQiOjE3Mjg4ODY3NDYsImV4cCI6MTcyODg5MDM0NiwiZW1haWwiOiJhcmFkaHlhQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiJ9.XXHJ87OpVtszSh2UIaTUilumnPffjoReF0B50CIpQGY')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\api\\public\\index.php')
+CRITICAL - 2024-10-14 06:22:46 --> Error: Firebase\JWT\JWT::decode(): Argument #3 ($headers) cannot be passed by reference
+[Method: GET, Route: userinfo]
+in APPPATH\Controllers\UserController.php on line 72.
+ 1 APPPATH\Controllers\UserController.php(48): App\Controllers\UserController->validateJWT('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ5b3VyX2lzc3VlciIsImF1ZCI6InlvdXJfYXVkaWVuY2UiLCJpYXQiOjE3Mjg4ODY3NDYsImV4cCI6MTcyODg5MDM0NiwiZW1haWwiOiJhcmFkaHlhQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiJ9.XXHJ87OpVtszSh2UIaTUilumnPffjoReF0B50CIpQGY')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->getUserInfo()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\api\\public\\index.php')
+CRITICAL - 2024-10-14 06:22:59 --> Error: Firebase\JWT\JWT::decode(): Argument #3 ($headers) cannot be passed by reference
+[Method: GET, Route: userinfo]
+in APPPATH\Controllers\UserController.php on line 72.
+ 1 APPPATH\Controllers\UserController.php(48): App\Controllers\UserController->validateJWT('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3Mjg4ODY5NTAsImV4cCI6MTcyODg5MDU1MCwiZW1haWwiOiJhcmFkaHlhQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiJ9.jGkY5tCJwEe-KH8yj28K7my0D-nFkcqvETdw9KL5p98')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->getUserInfo()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\api\\public\\index.php')
+CRITICAL - 2024-10-14 09:59:48 --> ErrorException: Undefined property: App\Controllers\UserController::$jwtSecret
+[Method: POST, Route: login]
+in APPPATH\Controllers\UserController.php on line 70.
+ 1 APPPATH\Controllers\UserController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\UserController::$jwtSecret', 'C:\\xampp\\htdocs\\api\\app\\Controllers\\UserController.php', 70)
+ 2 APPPATH\Controllers\UserController.php(33): App\Controllers\UserController->getJWT('gaur@gmail.com', 'admin')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->login()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\api\\public\\index.php')
+CRITICAL - 2024-10-14 10:02:03 --> Error: Call to undefined method App\Controllers\UserController::getJWT()
+[Method: POST, Route: login]
+in APPPATH\Controllers\UserController.php on line 34.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->login()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\api\\public\\index.php')
+CRITICAL - 2024-10-14 10:25:02 --> Error: Firebase\JWT\JWT::decode(): Argument #3 ($headers) cannot be passed by reference
+[Method: GET, Route: userinfo]
+in APPPATH\Controllers\UserController.php on line 87.
+ 1 APPPATH\Controllers\UserController.php(52): App\Controllers\UserController->validateJWT('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3Mjg4ODY5NTAsImV4cCI6MTcyODg5MDU1MCwiZW1haWwiOiJhcmFkaHlhQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiJ9.jGkY5tCJwEe-KH8yj28K7my0D-nFkcqvETdw9KL5p98')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->getUserInfo()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\api\\public\\index.php')
+CRITICAL - 2024-10-14 10:25:22 --> Error: Firebase\JWT\JWT::decode(): Argument #3 ($headers) cannot be passed by reference
+[Method: GET, Route: userinfo]
+in APPPATH\Controllers\UserController.php on line 87.
+ 1 APPPATH\Controllers\UserController.php(52): App\Controllers\UserController->validateJWT('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3Mjg4ODY5NTAsImV4cCI6MTcyODg5MDU1MCwiZW1haWwiOiJhcmFkaHlhQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiJ9.jGkY5tCJwEe-KH8yj28K7my0D-nFkcqvETdw9KL5p98')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->getUserInfo()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\api\\public\\index.php')
+CRITICAL - 2024-10-14 10:25:58 --> Error: Firebase\JWT\JWT::decode(): Argument #3 ($headers) cannot be passed by reference
+[Method: GET, Route: userinfo]
+in APPPATH\Controllers\UserController.php on line 87.
+ 1 APPPATH\Controllers\UserController.php(52): App\Controllers\UserController->validateJWT('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3Mjg4ODY5NTAsImV4cCI6MTcyODg5MDU1MCwiZW1haWwiOiJhcmFkaHlhQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiJ9.jGkY5tCJwEe-KH8yj28K7my0D-nFkcqvETdw9KL5p98')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->getUserInfo()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\api\\public\\index.php')
+CRITICAL - 2024-10-14 10:26:01 --> Error: Firebase\JWT\JWT::decode(): Argument #3 ($headers) cannot be passed by reference
+[Method: GET, Route: userinfo]
+in APPPATH\Controllers\UserController.php on line 87.
+ 1 APPPATH\Controllers\UserController.php(52): App\Controllers\UserController->validateJWT('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3Mjg4ODY5NTAsImV4cCI6MTcyODg5MDU1MCwiZW1haWwiOiJhcmFkaHlhQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiJ9.jGkY5tCJwEe-KH8yj28K7my0D-nFkcqvETdw9KL5p98')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->getUserInfo()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\api\\public\\index.php')
+CRITICAL - 2024-10-14 11:57:02 --> Error: Firebase\JWT\JWT::decode(): Argument #3 ($headers) cannot be passed by reference
+[Method: POST, Route: protected-resource]
+in APPPATH\Controllers\UserController.php on line 76.
+ 1 APPPATH\Controllers\UserController.php(50): App\Controllers\UserController->validateJWT('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3Mjg4ODY5NTAsImV4cCI6MTcyODg5MDU1MCwiZW1haWwiOiJhcmFkaHlhQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiJ9.jGkY5tCJwEe-KH8yj28K7my0D-nFkcqvETdw9KL5p98')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->authenticateJWT()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\api\\public\\index.php')
+CRITICAL - 2024-10-14 11:59:02 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "protected-resource
+"
+[Method: POST, Route: api/public/protected-resource%0A]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('api/public/protected-resource
+')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('api/public/protected-resource
+')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\api\\public\\index.php')
+CRITICAL - 2024-10-14 12:00:08 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "protected-resource
+"
+[Method: POST, Route: api/public/protected-resource%0A]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('api/public/protected-resource
+')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('api/public/protected-resource
+')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\api\\public\\index.php')
+CRITICAL - 2024-10-14 12:01:08 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "protected-resource
+"
+[Method: POST, Route: api/public/protected-resource%0A]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('api/public/protected-resource
+')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('api/public/protected-resource
+')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\api\\public\\index.php')
+CRITICAL - 2024-10-14 12:01:26 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "protected-resource
+"
+[Method: POST, Route: api/public/protected-resource%0A]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('api/public/protected-resource
+')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('api/public/protected-resource
+')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\api\\public\\index.php')
+CRITICAL - 2024-10-14 12:01:41 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "register
+"
+[Method: POST, Route: register%0A]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('register
+')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('register
+')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\api\\public\\index.php')
+CRITICAL - 2024-10-14 12:02:27 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "register
+"
+[Method: POST, Route: api/public/register%0A]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('api/public/register
+')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('api/public/register
+')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\api\\public\\index.php')
+CRITICAL - 2024-10-14 12:02:56 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "register
+"
+[Method: POST, Route: register%0A]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('register
+')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('register
+')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\api\\public\\index.php')
+CRITICAL - 2024-10-14 12:03:22 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "register
+"
+[Method: POST, Route: register%0A]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('register
+')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('register
+')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\api\\public\\index.php')
+CRITICAL - 2024-10-14 12:04:18 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "register
+"
+[Method: POST, Route: register%0A]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('register
+')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('register
+')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\api\\public\\index.php')
+CRITICAL - 2024-10-14 12:06:10 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "register
+"
+[Method: POST, Route: register%0A]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('register
+')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('register
+')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\api\\public\\index.php')
+CRITICAL - 2024-10-14 12:15:19 --> Error: Firebase\JWT\JWT::decode(): Argument #3 ($headers) cannot be passed by reference
+[Method: POST, Route: protected-resource]
+in APPPATH\Controllers\UserController.php on line 116.
+ 1 APPPATH\Controllers\UserController.php(133): App\Controllers\UserController->validateJWT('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3Mjg4ODY5NTAsImV4cCI6MTcyODg5MDU1MCwiZW1haWwiOiJhcmFkaHlhQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiJ9.jGkY5tCJwEe-KH8yj28K7my0D-nFkcqvETdw9KL5p98')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->protectedResource()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\api\\public\\index.php')
+CRITICAL - 2024-10-14 12:16:21 --> TypeError: Firebase\JWT\JWT::decode(): Argument #3 ($headers) must be of type ?stdClass, array given, called in C:\xampp\htdocs\api\app\Controllers\UserController.php on line 117
+[Method: POST, Route: protected-resource]
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 96.
+ 1 APPPATH\Controllers\UserController.php(117): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3Mjg4ODY5NTAsImV4cCI6MTcyODg5MDU1MCwiZW1haWwiOiJhcmFkaHlhQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiJ9.jGkY5tCJwEe-KH8yj28K7my0D-nFkcqvETdw9KL5p98', 'aaru', [...])
+ 2 APPPATH\Controllers\UserController.php(135): App\Controllers\UserController->validateJWT('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3Mjg4ODY5NTAsImV4cCI6MTcyODg5MDU1MCwiZW1haWwiOiJhcmFkaHlhQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiJ9.jGkY5tCJwEe-KH8yj28K7my0D-nFkcqvETdw9KL5p98')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->protectedResource()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\api\\public\\index.php')
+CRITICAL - 2024-10-14 12:16:54 --> Error: Firebase\JWT\JWT::decode(): Argument #3 ($headers) cannot be passed by reference
+[Method: POST, Route: protected-resource]
+in APPPATH\Controllers\UserController.php on line 117.
+ 1 APPPATH\Controllers\UserController.php(137): App\Controllers\UserController->validateJWT('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3Mjg4ODY5NTAsImV4cCI6MTcyODg5MDU1MCwiZW1haWwiOiJhcmFkaHlhQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiJ9.jGkY5tCJwEe-KH8yj28K7my0D-nFkcqvETdw9KL5p98')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->protectedResource()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\api\\public\\index.php')
+ERROR - 2024-10-14 13:16:59 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\api\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\api\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'api', 3306, '', 0)
+#1 C:\xampp\htdocs\api\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\api\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\api\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\api\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\api\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\api\app\Controllers\UserController.php(23): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\api\system\CodeIgniter.php(933): App\Controllers\UserController->register()
+#8 C:\xampp\htdocs\api\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#9 C:\xampp\htdocs\api\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\api\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\api\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\api\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\api\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\api\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\api\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\api\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\api\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\api\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\api\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\api\app\Controllers\UserController.php(23): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\api\system\CodeIgniter.php(933): App\Controllers\UserController->register()
+#7 C:\xampp\htdocs\api\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#8 C:\xampp\htdocs\api\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\api\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\api\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\api\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\api\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-10-14 13:16:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: POST, Route: register]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\UserController.php(23): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->register()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\api\\public\\index.php')

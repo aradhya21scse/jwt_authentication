@@ -1,0 +1,206 @@
+CRITICAL - 2024-10-16 06:26:39 --> ErrorException: Undefined property: CodeIgniter\HTTP\Response::$id
+[Method: GET, Route: user]
+in APPPATH\Controllers\AdminController.php on line 57.
+ 1 APPPATH\Controllers\AdminController.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\HTTP\\Response::$id', 'C:\\xampp\\htdocs\\api2\\app\\Controllers\\AdminController.php', 57)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->UserDashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\api2\\public\\index.php')
+CRITICAL - 2024-10-16 06:29:06 --> ErrorException: Undefined property: CodeIgniter\HTTP\Response::$id
+[Method: GET, Route: user]
+in APPPATH\Controllers\AdminController.php on line 57.
+ 1 APPPATH\Controllers\AdminController.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\HTTP\\Response::$id', 'C:\\xampp\\htdocs\\api2\\app\\Controllers\\AdminController.php', 57)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->UserDashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\api2\\public\\index.php')
+ERROR - 2024-10-16 09:41:10 --> mysqli_sql_exception: Duplicate entry 'admin@gmail.com' for key 'email' in C:\xampp\htdocs\api2\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\api2\system\Database\MySQLi\Connection.php(312): mysqli->query('UPDATE user SET...', 0)
+#1 C:\xampp\htdocs\api2\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE user SET...')
+#2 C:\xampp\htdocs\api2\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE user SET...')
+#3 C:\xampp\htdocs\api2\app\Models\UserModel.php(30): CodeIgniter\Database\BaseConnection->query('UPDATE user SET...')
+#4 C:\xampp\htdocs\api2\app\Controllers\AdminController.php(134): App\Models\UserModel->updateUserDataById('4', Array)
+#5 C:\xampp\htdocs\api2\system\CodeIgniter.php(933): App\Controllers\AdminController->updateUser('4')
+#6 C:\xampp\htdocs\api2\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#7 C:\xampp\htdocs\api2\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\api2\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\api2\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\api2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\api2\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-10-16 09:41:10 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'admin@gmail.com' for key 'email'
+[Method: POST, Route: admin/update/4]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\UserModel.php(30): CodeIgniter\Database\BaseConnection->query('UPDATE user SET username = \'adamns\', email =\'admin@gmail.com\', password=\'123456\'  WHERE id = \'4\'')
+ 2 APPPATH\Controllers\AdminController.php(134): App\Models\UserModel->updateUserDataById('4', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->updateUser('4')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\api2\\public\\index.php')
+CRITICAL - 2024-10-16 09:41:10 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'admin@gmail.com' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE user SET username = \'adamns\', email =\'admin@gmail.com\', password=\'123456\'  WHERE id = \'4\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE user SET username = \'adamns\', email =\'admin@gmail.com\', password=\'123456\'  WHERE id = \'4\'')
+ 3 APPPATH\Models\UserModel.php(30): CodeIgniter\Database\BaseConnection->query('UPDATE user SET username = \'adamns\', email =\'admin@gmail.com\', password=\'123456\'  WHERE id = \'4\'')
+ 4 APPPATH\Controllers\AdminController.php(134): App\Models\UserModel->updateUserDataById('4', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->updateUser('4')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\api2\\public\\index.php')
+CRITICAL - 2024-10-16 09:41:10 --> [Caused by] mysqli_sql_exception: Duplicate entry 'admin@gmail.com' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('UPDATE user SET username = \'adamns\', email =\'admin@gmail.com\', password=\'123456\'  WHERE id = \'4\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE user SET username = \'adamns\', email =\'admin@gmail.com\', password=\'123456\'  WHERE id = \'4\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE user SET username = \'adamns\', email =\'admin@gmail.com\', password=\'123456\'  WHERE id = \'4\'')
+ 4 APPPATH\Models\UserModel.php(30): CodeIgniter\Database\BaseConnection->query('UPDATE user SET username = \'adamns\', email =\'admin@gmail.com\', password=\'123456\'  WHERE id = \'4\'')
+ 5 APPPATH\Controllers\AdminController.php(134): App\Models\UserModel->updateUserDataById('4', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->updateUser('4')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\api2\\public\\index.php')
+ERROR - 2024-10-16 09:41:49 --> mysqli_sql_exception: Duplicate entry 'admin@gmail.com' for key 'email' in C:\xampp\htdocs\api2\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\api2\system\Database\MySQLi\Connection.php(312): mysqli->query('UPDATE user SET...', 0)
+#1 C:\xampp\htdocs\api2\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE user SET...')
+#2 C:\xampp\htdocs\api2\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE user SET...')
+#3 C:\xampp\htdocs\api2\app\Models\UserModel.php(30): CodeIgniter\Database\BaseConnection->query('UPDATE user SET...')
+#4 C:\xampp\htdocs\api2\app\Controllers\AdminController.php(134): App\Models\UserModel->updateUserDataById('4', Array)
+#5 C:\xampp\htdocs\api2\system\CodeIgniter.php(933): App\Controllers\AdminController->updateUser('4')
+#6 C:\xampp\htdocs\api2\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#7 C:\xampp\htdocs\api2\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\api2\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\api2\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\api2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\api2\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-10-16 09:41:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'admin@gmail.com' for key 'email'
+[Method: POST, Route: admin/update/4]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\UserModel.php(30): CodeIgniter\Database\BaseConnection->query('UPDATE user SET username = \'adamns\', email =\'admin@gmail.com\', password=\'123456\'  WHERE id = \'4\'')
+ 2 APPPATH\Controllers\AdminController.php(134): App\Models\UserModel->updateUserDataById('4', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->updateUser('4')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\api2\\public\\index.php')
+CRITICAL - 2024-10-16 09:41:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'admin@gmail.com' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE user SET username = \'adamns\', email =\'admin@gmail.com\', password=\'123456\'  WHERE id = \'4\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE user SET username = \'adamns\', email =\'admin@gmail.com\', password=\'123456\'  WHERE id = \'4\'')
+ 3 APPPATH\Models\UserModel.php(30): CodeIgniter\Database\BaseConnection->query('UPDATE user SET username = \'adamns\', email =\'admin@gmail.com\', password=\'123456\'  WHERE id = \'4\'')
+ 4 APPPATH\Controllers\AdminController.php(134): App\Models\UserModel->updateUserDataById('4', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->updateUser('4')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\api2\\public\\index.php')
+CRITICAL - 2024-10-16 09:41:49 --> [Caused by] mysqli_sql_exception: Duplicate entry 'admin@gmail.com' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('UPDATE user SET username = \'adamns\', email =\'admin@gmail.com\', password=\'123456\'  WHERE id = \'4\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE user SET username = \'adamns\', email =\'admin@gmail.com\', password=\'123456\'  WHERE id = \'4\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE user SET username = \'adamns\', email =\'admin@gmail.com\', password=\'123456\'  WHERE id = \'4\'')
+ 4 APPPATH\Models\UserModel.php(30): CodeIgniter\Database\BaseConnection->query('UPDATE user SET username = \'adamns\', email =\'admin@gmail.com\', password=\'123456\'  WHERE id = \'4\'')
+ 5 APPPATH\Controllers\AdminController.php(134): App\Models\UserModel->updateUserDataById('4', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->updateUser('4')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\api2\\public\\index.php')
+ERROR - 2024-10-16 09:42:28 --> mysqli_sql_exception: Duplicate entry 'admin@gmail.com' for key 'email' in C:\xampp\htdocs\api2\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\api2\system\Database\MySQLi\Connection.php(312): mysqli->query('UPDATE user SET...', 0)
+#1 C:\xampp\htdocs\api2\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE user SET...')
+#2 C:\xampp\htdocs\api2\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE user SET...')
+#3 C:\xampp\htdocs\api2\app\Models\UserModel.php(30): CodeIgniter\Database\BaseConnection->query('UPDATE user SET...')
+#4 C:\xampp\htdocs\api2\app\Controllers\AdminController.php(134): App\Models\UserModel->updateUserDataById('4', Array)
+#5 C:\xampp\htdocs\api2\system\CodeIgniter.php(933): App\Controllers\AdminController->updateUser('4')
+#6 C:\xampp\htdocs\api2\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#7 C:\xampp\htdocs\api2\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\api2\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\api2\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\api2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\api2\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-10-16 09:42:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'admin@gmail.com' for key 'email'
+[Method: POST, Route: admin/update/4]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\UserModel.php(30): CodeIgniter\Database\BaseConnection->query('UPDATE user SET username = \'adamns\', email =\'admin@gmail.com\', password=\'123456\'  WHERE id = \'4\'')
+ 2 APPPATH\Controllers\AdminController.php(134): App\Models\UserModel->updateUserDataById('4', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->updateUser('4')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\api2\\public\\index.php')
+CRITICAL - 2024-10-16 09:42:28 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'admin@gmail.com' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE user SET username = \'adamns\', email =\'admin@gmail.com\', password=\'123456\'  WHERE id = \'4\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE user SET username = \'adamns\', email =\'admin@gmail.com\', password=\'123456\'  WHERE id = \'4\'')
+ 3 APPPATH\Models\UserModel.php(30): CodeIgniter\Database\BaseConnection->query('UPDATE user SET username = \'adamns\', email =\'admin@gmail.com\', password=\'123456\'  WHERE id = \'4\'')
+ 4 APPPATH\Controllers\AdminController.php(134): App\Models\UserModel->updateUserDataById('4', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->updateUser('4')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\api2\\public\\index.php')
+CRITICAL - 2024-10-16 09:42:28 --> [Caused by] mysqli_sql_exception: Duplicate entry 'admin@gmail.com' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('UPDATE user SET username = \'adamns\', email =\'admin@gmail.com\', password=\'123456\'  WHERE id = \'4\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE user SET username = \'adamns\', email =\'admin@gmail.com\', password=\'123456\'  WHERE id = \'4\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE user SET username = \'adamns\', email =\'admin@gmail.com\', password=\'123456\'  WHERE id = \'4\'')
+ 4 APPPATH\Models\UserModel.php(30): CodeIgniter\Database\BaseConnection->query('UPDATE user SET username = \'adamns\', email =\'admin@gmail.com\', password=\'123456\'  WHERE id = \'4\'')
+ 5 APPPATH\Controllers\AdminController.php(134): App\Models\UserModel->updateUserDataById('4', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->updateUser('4')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\api2\\public\\index.php')
+CRITICAL - 2024-10-16 09:44:40 --> ErrorException: Undefined array key "id"
+[Method: POST, Route: admin/update/4]
+in APPPATH\Controllers\AdminController.php on line 135.
+ 1 APPPATH\Controllers\AdminController.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\api2\\app\\Controllers\\AdminController.php', 135)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->updateUser('4')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\api2\\public\\index.php')
+CRITICAL - 2024-10-16 09:46:50 --> ErrorException: Attempt to read property "id" on null
+[Method: POST, Route: admin/update/4]
+in APPPATH\Controllers\AdminController.php on line 135.
+ 1 APPPATH\Controllers\AdminController.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'C:\\xampp\\htdocs\\api2\\app\\Controllers\\AdminController.php', 135)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->updateUser('4')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\api2\\public\\index.php')
