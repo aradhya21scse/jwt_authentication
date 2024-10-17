@@ -1,18 +1,23 @@
 <?php
 
 namespace App\Controllers;
+use CodeIgniter\Controller;
 
 use App\Models\UserModel;
 use Firebase\JWT\JWT;
 use Firebase\JWT\Key;
+use App\Controllers\MessageController;
 
 class AdminController extends BaseController
 {
-    protected $userModel;
+    public $userModel;
+    public  $messageController;
 
-    public function __construct() 
+
+    public function __construct()
     {
         $this->userModel = new UserModel();
+        $this->messageController = new MessageController();
     }
 
     private function validateJWT($token)//function to validate and 
@@ -26,21 +31,14 @@ class AdminController extends BaseController
 }
 
 
-<<<<<<< HEAD
 private function requireAdmin() //check for admin 
-=======
-private function requireAdmin()//to check for admin
->>>>>>> 51a653a551d62af92357d969975133c174d91a54
 {
     $header = $this->request->getHeaderLine('Authorization');   //getting authourization header
     $token = str_replace('Bearer ', '', $header); //removing bearer and extracting only the token part from the header
     $decoded = $this->validateJWT($token);
 
     if (!$decoded || $decoded->role !== 'admin') {
-        return $this->response->setJSON([
-            'status' => false,
-            'message' => 'Unauthorized access. Admins only.'
-        ])->setStatusCode(403);
+        return $this->messageController->displayMessage('false', 'Unauthorized access. Admins only.')->setStatusCode(403);
     }
     return true; 
 }
@@ -61,19 +59,12 @@ private function requireAdmin()//to check for admin
         {
             $decoded = $this->requireUser();
             if (!$decoded) {
-                return $this->response->setJSON([
-                    'status' => false,
-                    'message' => 'Unauthorized access. Please login.'
-                ])->setStatusCode(403);
+                return $this->messageController->displayMessage('false','unauthorized access.Please Login');
             }
-            return $this->response->setJSON([
-                'status' => true,
-                'message' => 'Welcome to the user dashboard.',
-                'user' => [
-                    'id' => $decoded->id,
-                    'username' => $decoded->username,
-                    'role' => $decoded->role
-                ]
+            return $this->messageController->displayMessage('true',"Welcome to userdashboard",[ 'user' => [
+                'id' => $decoded->id,
+                'username' => $decoded->username,
+                'role' => $decoded->role]
             ]);
         }
 
@@ -86,9 +77,10 @@ private function requireAdmin()//to check for admin
             return $adminCheck;
         }
 
-        return $this->response->setJSON(['status' => true,'message'=> 'Welcome to admin dashboard.']);
-
+        return $this->messageController->displayMessage(true, 'Welcome to admin dashboard.');
     }
+
+    
 
    
 
@@ -102,8 +94,9 @@ private function requireAdmin()//to check for admin
         $data = $this->request->getJSON(true);
         
         if ($this->userModel->getUserDataByEmail($data['email'])) {
-            return $this->response->setJSON(['status' => false, 'message' => 'User already exists.']);
+            return $this->messageController->displayMessage(false, 'User already exists.');
         }
+        
 
         $userData = [
             'username' => $data['username'],
@@ -112,7 +105,7 @@ private function requireAdmin()//to check for admin
         ];
 
         $this->userModel->saveUserDataInDB($userData);
-        return $this->response->setJSON(['status' => true, 'message' => 'User added successfully.']);
+        return $this->messageController->displayMessage(true, 'User added successfully.');
     }
 
     public function updateUser($id)//updating user only by admin
@@ -126,17 +119,17 @@ private function requireAdmin()//to check for admin
         
         $existingUser = $this->userModel->findUserById($id);    //getting user by id
         if (!$existingUser) {
-            return $this->response->setJSON(['status' => false, 'message' => 'User not found.'])->setStatusCode(404); 
+            return $this->messageController->displayMessage(false, 'User not found.')->setStatusCode(404); 
         }
         $data = $this->request->getJSON(true);
         $existingEmail=$this->userModel->getUserDataByEmail($data['email']);
         
         if ($existingEmail && $existingEmail->id != $id) {
-            return $this->response->setJSON(['status' => false, 'message' => 'User already exists.']);
+            return $this->messageController->displayMessage(false, 'User already exists.');
         }
 
         if ($this->userModel->updateUserDataById($id, $data)) {
-            return $this->response->setJSON(['status' => true, 'message' => 'User updated successfully.']);
+            return $this->messageController->displayMessage(true, 'User updated successfully.');
         }
     }
     
@@ -149,9 +142,9 @@ private function requireAdmin()//to check for admin
 
         $existingUser = $this->userModel->findUserById($id);
         if (!$existingUser) {
-            return $this->response->setJSON(['status' => false, 'message' => 'User not found.'])->setStatusCode(404);
+            return $this->messageController->displayMessage(false, 'User not found.')->setStatusCode(404);
         }
         $this->userModel->deleteUserDataById($id);
-        return $this->response->setJSON(['status' => true, 'message' => 'User deleted successfully.']);
+        return $this->messageController->displayMessage(true, 'User deleted successfully.');
     }
 }

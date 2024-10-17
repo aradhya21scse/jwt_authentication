@@ -1,0 +1,277 @@
+CRITICAL - 2024-10-17 04:38:23 --> Error: Call to a member function setJSON() on null
+[Method: POST, Route: register]
+in APPPATH\Controllers\MessageController.php on line 8.
+ 1 APPPATH\Controllers\UserController.php(37): App\Controllers\MessageController->displaymessage('', 'Email already exists.')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jwt_authentication\\public\\index.php')
+CRITICAL - 2024-10-17 04:42:51 --> Error: Call to a member function setJSON() on null
+[Method: POST, Route: register]
+in APPPATH\Controllers\MessageController.php on line 9.
+ 1 APPPATH\Controllers\UserController.php(37): App\Controllers\MessageController->displayMessage(false, 'Email already exists.')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jwt_authentication\\public\\index.php')
+CRITICAL - 2024-10-17 04:45:56 --> Error: Call to a member function setJSON() on null
+[Method: POST, Route: register]
+in APPPATH\Controllers\MessageController.php on line 9.
+ 1 APPPATH\Controllers\UserController.php(37): App\Controllers\MessageController->displayMessage(false, 'Email already exists.')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jwt_authentication\\public\\index.php')
+CRITICAL - 2024-10-17 04:49:23 --> Error: Call to a member function setJSON() on null
+[Method: POST, Route: register]
+in APPPATH\Controllers\MessageController.php on line 9.
+ 1 APPPATH\Controllers\UserController.php(38): App\Controllers\MessageController->displayMessage(false, 'Email already exists.')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jwt_authentication\\public\\index.php')
+CRITICAL - 2024-10-17 04:50:00 --> Error: Call to a member function setJSON() on null
+[Method: POST, Route: register]
+in APPPATH\Controllers\MessageController.php on line 9.
+ 1 APPPATH\Controllers\UserController.php(38): App\Controllers\MessageController->displayMessage(false, 'Email already exists.')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jwt_authentication\\public\\index.php')
+CRITICAL - 2024-10-17 04:50:22 --> ArgumentCountError: Too few arguments to function App\Controllers\MessageController::displayMessage(), 1 passed in C:\xampp\htdocs\jwt_authentication\app\Controllers\UserController.php on line 38 and at least 2 expected
+[Method: POST, Route: register]
+in APPPATH\Controllers\MessageController.php on line 7.
+ 1 APPPATH\Controllers\UserController.php(38): App\Controllers\MessageController->displayMessage([...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jwt_authentication\\public\\index.php')
+CRITICAL - 2024-10-17 04:51:00 --> Error: Call to a member function setJSON() on null
+[Method: POST, Route: register]
+in APPPATH\Controllers\MessageController.php on line 9.
+ 1 APPPATH\Controllers\UserController.php(38): App\Controllers\MessageController->displayMessage(false, 'Email already exists.')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jwt_authentication\\public\\index.php')
+CRITICAL - 2024-10-17 04:51:40 --> Error: Call to a member function setJSON() on null
+[Method: GET, Route: user]
+in APPPATH\Controllers\MessageController.php on line 9.
+ 1 APPPATH\Controllers\AdminController.php(64): App\Controllers\MessageController->displayMessage(true, 'Welcome to userdashboard', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->UserDashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jwt_authentication\\public\\index.php')
+CRITICAL - 2024-10-17 04:56:45 --> Error: Call to a member function setJSON() on null
+[Method: GET, Route: user]
+in APPPATH\Controllers\MessageController.php on line 14.
+ 1 APPPATH\Controllers\AdminController.php(64): App\Controllers\MessageController->displayMessage(true, 'Welcome to userdashboard', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->UserDashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jwt_authentication\\public\\index.php')
+CRITICAL - 2024-10-17 04:57:08 --> Error: Call to a member function setJSON() on null
+[Method: POST, Route: register]
+in APPPATH\Controllers\MessageController.php on line 14.
+ 1 APPPATH\Controllers\UserController.php(38): App\Controllers\MessageController->displayMessage(false, 'Email already exists.')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jwt_authentication\\public\\index.php')
+CRITICAL - 2024-10-17 04:57:53 --> Error: Call to a member function setJSON() on null
+[Method: POST, Route: register]
+in APPPATH\Controllers\MessageController.php on line 14.
+ 1 APPPATH\Controllers\UserController.php(38): App\Controllers\MessageController->displayMessage(false, 'Email already exists.')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jwt_authentication\\public\\index.php')
+CRITICAL - 2024-10-17 04:58:24 --> Error: Call to a member function setJSON() on null
+[Method: POST, Route: register]
+in APPPATH\Controllers\MessageController.php on line 14.
+ 1 APPPATH\Controllers\UserController.php(38): App\Controllers\MessageController->displayMessage(false, 'Email already exists.', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jwt_authentication\\public\\index.php')
+CRITICAL - 2024-10-17 05:00:05 --> Error: Call to a member function setJSON() on null
+[Method: POST, Route: register]
+in APPPATH\Controllers\MessageController.php on line 14.
+ 1 APPPATH\Controllers\UserController.php(38): App\Controllers\MessageController->displayMessage(false, 'Email already exists.', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jwt_authentication\\public\\index.php')
+CRITICAL - 2024-10-17 05:00:20 --> Error: Call to a member function setJSON() on null
+[Method: POST, Route: register]
+in APPPATH\Controllers\MessageController.php on line 14.
+ 1 APPPATH\Controllers\UserController.php(38): App\Controllers\MessageController->displayMessage('', 'Email already exists.', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jwt_authentication\\public\\index.php')
+CRITICAL - 2024-10-17 05:00:33 --> Error: Call to a member function setJSON() on null
+[Method: POST, Route: register]
+in APPPATH\Controllers\MessageController.php on line 14.
+ 1 APPPATH\Controllers\UserController.php(38): App\Controllers\MessageController->displayMessage('', 'Email already exists.', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jwt_authentication\\public\\index.php')
+CRITICAL - 2024-10-17 05:00:58 --> Error: Call to a member function setJSON() on null
+[Method: POST, Route: register]
+in APPPATH\Controllers\MessageController.php on line 14.
+ 1 APPPATH\Controllers\UserController.php(38): App\Controllers\MessageController->displayMessage('false', 'Email already exists.', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jwt_authentication\\public\\index.php')
+CRITICAL - 2024-10-17 05:02:43 --> Error: Call to a member function setJSON() on null
+[Method: POST, Route: register]
+in APPPATH\Controllers\MessageController.php on line 14.
+ 1 APPPATH\Controllers\UserController.php(38): App\Controllers\MessageController->displayMessage('false', 'Email already exists.')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jwt_authentication\\public\\index.php')
+CRITICAL - 2024-10-17 05:03:39 --> Error: Call to a member function setJSON() on null
+[Method: POST, Route: register]
+in APPPATH\Controllers\MessageController.php on line 17.
+ 1 APPPATH\Controllers\UserController.php(38): App\Controllers\MessageController->displayMessage('false', 'Email already exists.')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jwt_authentication\\public\\index.php')
+CRITICAL - 2024-10-17 05:04:41 --> Error: Call to a member function getJSON() on null
+[Method: POST, Route: register]
+in APPPATH\Controllers\MessageController.php on line 17.
+ 1 APPPATH\Controllers\UserController.php(38): App\Controllers\MessageController->displayMessage('false', 'Email already exists.')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jwt_authentication\\public\\index.php')
+CRITICAL - 2024-10-17 05:06:35 --> Error: Call to a member function setJSON() on null
+[Method: POST, Route: register]
+in APPPATH\Controllers\MessageController.php on line 17.
+ 1 APPPATH\Controllers\UserController.php(38): App\Controllers\MessageController->displayMessage('false', 'Email already exists.')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jwt_authentication\\public\\index.php')
+CRITICAL - 2024-10-17 05:12:01 --> Error: Call to a member function setJSON() on null
+[Method: POST, Route: register]
+in APPPATH\Controllers\MessageController.php on line 17.
+ 1 APPPATH\Controllers\UserController.php(38): App\Controllers\MessageController->displayMessage()
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jwt_authentication\\public\\index.php')
+CRITICAL - 2024-10-17 05:13:41 --> ParseError: syntax error, unexpected token "=>", expecting ")"
+[Method: POST, Route: register]
+in APPPATH\Controllers\UserController.php on line 38.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\jwt_authentication\\app\\Controllers\\UserController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\UserController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\UserController')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\UserController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jwt_authentication\\public\\index.php')
+CRITICAL - 2024-10-17 05:16:09 --> Error: Call to a member function setJSON() on null
+[Method: POST, Route: register]
+in APPPATH\Controllers\MessageController.php on line 17.
+ 1 APPPATH\Controllers\UserController.php(48): App\Controllers\MessageController->displayMessage(true, 'User registered successfully.')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jwt_authentication\\public\\index.php')
+CRITICAL - 2024-10-17 05:18:46 --> Error: Call to a member function setJSON() on null
+[Method: POST, Route: register]
+in APPPATH\Controllers\MessageController.php on line 12.
+ 1 APPPATH\Controllers\UserController.php(48): App\Controllers\MessageController->displayMessage(true, 'User registered successfully.')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jwt_authentication\\public\\index.php')
+CRITICAL - 2024-10-17 05:21:48 --> Error: Call to a member function setJSON() on null
+[Method: POST, Route: register]
+in APPPATH\Controllers\MessageController.php on line 11.
+ 1 APPPATH\Controllers\UserController.php(48): App\Controllers\MessageController->displayMessage('true', 'User registered successfully.')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jwt_authentication\\public\\index.php')

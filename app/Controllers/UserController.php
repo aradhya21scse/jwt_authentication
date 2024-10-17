@@ -1,21 +1,27 @@
 <?php
 
 namespace App\Controllers;
+use CodeIgniter\Controller;
 
 use App\Models\UserModel;
 use App\Controllers\UserValidation;
 use Firebase\JWT\JWT;
+use App\Controllers\MessageController;
 
 class UserController extends BaseController
 {
-    protected  $userModel;
-    protected $validator;
+    public  $userModel;
+    public $validator;
+
+    public $messageController;
 
 
     public function __construct()
     {
         $this->userModel = new UserModel();
         $this->validator = new UserValidation();
+        $this->messageController = new MessageController();
+
     }
 
 
@@ -29,10 +35,7 @@ class UserController extends BaseController
         }
         $existingUser = $this->userModel->getUserDataByEmail($data['email']); //check for existing user son they cannot register again
         if ($existingUser) {
-            return $this->response->setJSON([
-                'status' => false,
-                'message' => 'Email already exists.'
-            ])->setStatusCode(400);
+            return $this->messageController->displayMessage('false', 'Email already exist.');
          }
 
         $userData = [
@@ -42,7 +45,7 @@ class UserController extends BaseController
         ];
 
         $this->userModel->saveUserDataInDB($userData); //model function is used to insert data
-        return $this->response->setJSON(['status' => true, 'message' => 'User registered successfully.']);
+        return $this->messageController->displayMessage('true', 'User registered successfully.');
     }
 
     public function login()//login function to login and token generation
@@ -53,19 +56,13 @@ class UserController extends BaseController
             return $this->response->setJSON($Result)->setStatusCode(400);
         }
         if (!isset($data['email']) || !isset($data['password'])) {
-            return $this->response->setJSON([
-                'status' => false,
-                'message' => 'Email and password are required.'
-            ])->setStatusCode(400);
+            return $this->messageController->displayMessage('false', 'Email and password are required.');
         }
     
     
         $user = $this->userModel->getUserDataByEmail($data['email']);
         if (!$user || !password_verify($data['password'], $user->password)) {   
-            return $this->response->setJSON([
-                'status' => false,
-                'message' => 'Invalid email or password.'
-            ])->setStatusCode(401);   
+            return $this->messageController->displayMessage('false', 'Invalid email or password.');  
         }
     
         $payload = [
@@ -74,7 +71,7 @@ class UserController extends BaseController
             'role' => $user->role
         ];
     
-        $jwt = JWT::encode($payload, getenv('JWT_SECRET'), 'HS256'); //jwt  token is generated here
+        $jwt = JWT::encode($payload, getenv('JWT_SECRET'), getenv('JWT_HASH_ALGO')); //jwt  token is generated here
 
         return $this->response->setJSON(['status' => true, 'token' => $jwt]);
     }

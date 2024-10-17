@@ -17,4 +17,3 @@ $routes->post('admin/delete/(:num)', 'AdminController::deleteUser/$1');
 
 
 
-
