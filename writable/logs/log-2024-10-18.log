@@ -1,0 +1,268 @@
+CRITICAL - 2024-10-18 06:02:28 --> ParseError: Unclosed '{' on line 28 does not match ')'
+[Method: POST, Route: captcha/generate]
+in APPPATH\Controllers\CaptchaController.php on line 34.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\jwt_authentication\\app\\Controllers\\CaptchaController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\CaptchaController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\CaptchaController')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\CaptchaController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jwt_authentication\\public\\index.php')
+CRITICAL - 2024-10-18 06:07:21 --> Error: Class "Firebase\JWT\JWT" not found
+[Method: POST, Route: captcha/generate]
+in APPPATH\Controllers\CaptchaController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CaptchaController->generatecaptcha()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CaptchaController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jwt_authentication\\public\\index.php')
+CRITICAL - 2024-10-18 06:09:15 --> ErrorException: Attempt to read property "jwt_token" on null
+[Method: POST, Route: captcha/validate]
+in APPPATH\Controllers\CaptchaController.php on line 30.
+ 1 APPPATH\Controllers\CaptchaController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "jwt_token" on null', 'C:\\xampp\\htdocs\\jwt_authentication\\app\\Controllers\\CaptchaController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CaptchaController->validateCaptcha()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CaptchaController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jwt_authentication\\public\\index.php')
+CRITICAL - 2024-10-18 06:09:26 --> ErrorException: Attempt to read property "jwt_token" on null
+[Method: POST, Route: captcha/validate]
+in APPPATH\Controllers\CaptchaController.php on line 30.
+ 1 APPPATH\Controllers\CaptchaController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "jwt_token" on null', 'C:\\xampp\\htdocs\\jwt_authentication\\app\\Controllers\\CaptchaController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CaptchaController->validateCaptcha()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CaptchaController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jwt_authentication\\public\\index.php')
+CRITICAL - 2024-10-18 06:11:58 --> ErrorException: Only variables should be passed by reference
+[Method: POST, Route: captcha/validate]
+in APPPATH\Controllers\CaptchaController.php on line 33.
+ 1 APPPATH\Controllers\CaptchaController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Only variables should be passed by reference', 'C:\\xampp\\htdocs\\jwt_authentication\\app\\Controllers\\CaptchaController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CaptchaController->validateCaptcha()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CaptchaController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jwt_authentication\\public\\index.php')
+CRITICAL - 2024-10-18 06:24:59 --> ErrorException: Only variables should be passed by reference
+[Method: POST, Route: captcha/validate]
+in APPPATH\Controllers\CaptchaController.php on line 33.
+ 1 APPPATH\Controllers\CaptchaController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Only variables should be passed by reference', 'C:\\xampp\\htdocs\\jwt_authentication\\app\\Controllers\\CaptchaController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CaptchaController->validateCaptcha()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CaptchaController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jwt_authentication\\public\\index.php')
+CRITICAL - 2024-10-18 06:25:12 --> ErrorException: Undefined property: stdClass::$jwt_token
+[Method: POST, Route: captcha/validate]
+in APPPATH\Controllers\CaptchaController.php on line 30.
+ 1 APPPATH\Controllers\CaptchaController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$jwt_token', 'C:\\xampp\\htdocs\\jwt_authentication\\app\\Controllers\\CaptchaController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CaptchaController->validateCaptcha()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CaptchaController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jwt_authentication\\public\\index.php')
+CRITICAL - 2024-10-18 06:25:21 --> ErrorException: Undefined property: stdClass::$jwt_token
+[Method: POST, Route: captcha/validate]
+in APPPATH\Controllers\CaptchaController.php on line 30.
+ 1 APPPATH\Controllers\CaptchaController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$jwt_token', 'C:\\xampp\\htdocs\\jwt_authentication\\app\\Controllers\\CaptchaController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CaptchaController->validateCaptcha()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CaptchaController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jwt_authentication\\public\\index.php')
+CRITICAL - 2024-10-18 06:28:34 --> ErrorException: Only variables should be passed by reference
+[Method: POST, Route: captcha/validate]
+in APPPATH\Controllers\CaptchaController.php on line 33.
+ 1 APPPATH\Controllers\CaptchaController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Only variables should be passed by reference', 'C:\\xampp\\htdocs\\jwt_authentication\\app\\Controllers\\CaptchaController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CaptchaController->validateCaptcha()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CaptchaController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jwt_authentication\\public\\index.php')
+CRITICAL - 2024-10-18 06:29:37 --> Error: Firebase\JWT\JWT::decode(): Argument #3 ($headers) cannot be passed by reference
+[Method: POST, Route: captcha/validate]
+in APPPATH\Controllers\CaptchaController.php on line 37.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CaptchaController->validateCaptcha()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CaptchaController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jwt_authentication\\public\\index.php')
+CRITICAL - 2024-10-18 06:37:34 --> Error: Firebase\JWT\JWT::decode(): Argument #3 ($headers) cannot be passed by reference
+[Method: POST, Route: captcha/validate]
+in APPPATH\Controllers\CaptchaController.php on line 37.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CaptchaController->validateCaptcha()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CaptchaController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jwt_authentication\\public\\index.php')
+CRITICAL - 2024-10-18 06:38:21 --> TypeError: Firebase\JWT\JWT::decode(): Argument #3 ($headers) must be of type ?stdClass, array given, called in C:\xampp\htdocs\jwt_authentication\app\Controllers\CaptchaController.php on line 41
+[Method: POST, Route: captcha/validate]
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 96.
+ 1 APPPATH\Controllers\CaptchaController.php(41): Firebase\JWT\JWT::decode('eyJhbGciOiJIUzI1NiIsInR...', 'aaru', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CaptchaController->validateCaptcha()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CaptchaController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jwt_authentication\\public\\index.php')
+CRITICAL - 2024-10-18 06:39:17 --> Error: Firebase\JWT\JWT::decode(): Argument #3 ($headers) cannot be passed by reference
+[Method: POST, Route: captcha/validate]
+in APPPATH\Controllers\CaptchaController.php on line 41.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CaptchaController->validateCaptcha()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CaptchaController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jwt_authentication\\public\\index.php')
+CRITICAL - 2024-10-18 06:41:26 --> ErrorException: Undefined property: stdClass::$jwt_token
+[Method: POST, Route: captcha/validate]
+in APPPATH\Controllers\CaptchaController.php on line 29.
+ 1 APPPATH\Controllers\CaptchaController.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$jwt_token', 'C:\\xampp\\htdocs\\jwt_authentication\\app\\Controllers\\CaptchaController.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CaptchaController->validateCaptcha()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CaptchaController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jwt_authentication\\public\\index.php')
+CRITICAL - 2024-10-18 06:42:57 --> ErrorException: Undefined property: App\Controllers\CaptchaController::$session
+[Method: POST, Route: captcha/validate]
+in APPPATH\Controllers\CaptchaController.php on line 31.
+ 1 APPPATH\Controllers\CaptchaController.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\CaptchaController::$session', 'C:\\xampp\\htdocs\\jwt_authentication\\app\\Controllers\\CaptchaController.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CaptchaController->validateCaptcha()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CaptchaController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jwt_authentication\\public\\index.php')
+CRITICAL - 2024-10-18 06:44:51 --> ErrorException: Undefined property: App\Controllers\CaptchaController::$session
+[Method: POST, Route: captcha/validate]
+in APPPATH\Controllers\CaptchaController.php on line 32.
+ 1 APPPATH\Controllers\CaptchaController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\CaptchaController::$session', 'C:\\xampp\\htdocs\\jwt_authentication\\app\\Controllers\\CaptchaController.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CaptchaController->validateCaptcha()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CaptchaController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jwt_authentication\\public\\index.php')
+CRITICAL - 2024-10-18 06:46:22 --> ErrorException: Undefined property: stdClass::$jwt_token
+[Method: POST, Route: captcha/validate]
+in APPPATH\Controllers\CaptchaController.php on line 29.
+ 1 APPPATH\Controllers\CaptchaController.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$jwt_token', 'C:\\xampp\\htdocs\\jwt_authentication\\app\\Controllers\\CaptchaController.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CaptchaController->validateCaptcha()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CaptchaController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jwt_authentication\\public\\index.php')
+CRITICAL - 2024-10-18 06:47:14 --> ErrorException: Undefined property: stdClass::$jwt_token
+[Method: POST, Route: captcha/validate]
+in APPPATH\Controllers\CaptchaController.php on line 29.
+ 1 APPPATH\Controllers\CaptchaController.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$jwt_token', 'C:\\xampp\\htdocs\\jwt_authentication\\app\\Controllers\\CaptchaController.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CaptchaController->validateCaptcha()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CaptchaController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jwt_authentication\\public\\index.php')
+CRITICAL - 2024-10-18 06:49:54 --> TypeError: Firebase\JWT\JWT::decode(): Argument #3 ($headers) must be of type ?stdClass, string given, called in C:\xampp\htdocs\jwt_authentication\app\Controllers\CaptchaController.php on line 37
+[Method: POST, Route: captcha/validate]
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 96.
+ 1 APPPATH\Controllers\CaptchaController.php(37): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjYXB0Y2hhX2NvZGUiOjQwNDF9.o6iQET2JOyUsQJ3xQ_lhnpV-td60vhJCjy9XFF7SXyk', 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjYXB0Y2hhX2NvZGUiOjQwNDF9.o6iQET2JOyUsQJ3xQ_lhnpV-td60vhJCjy9XFF7SXyk', 'HS256')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CaptchaController->validateCaptcha()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CaptchaController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jwt_authentication\\public\\index.php')
+CRITICAL - 2024-10-18 06:51:36 --> TypeError: Firebase\JWT\JWT::decode(): Argument #3 ($headers) must be of type ?stdClass, string given, called in C:\xampp\htdocs\jwt_authentication\app\Controllers\CaptchaController.php on line 38
+[Method: POST, Route: captcha/validate]
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 96.
+ 1 APPPATH\Controllers\CaptchaController.php(38): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjYXB0Y2hhX2NvZGUiOjQwNDF9.o6iQET2JOyUsQJ3xQ_lhnpV-td60vhJCjy9XFF7SXyk', 'aaru', 'HS256')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CaptchaController->validateCaptcha()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CaptchaController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jwt_authentication\\public\\index.php')
+CRITICAL - 2024-10-18 07:05:57 --> Error: Call to a member function getValue() on string
+[Method: POST, Route: captcha/validate]
+in APPPATH\Controllers\CaptchaController.php on line 42.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CaptchaController->validateCaptcha()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CaptchaController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jwt_authentication\\public\\index.php')
+CRITICAL - 2024-10-18 07:07:23 --> Error: Call to a member function getValue() on string
+[Method: POST, Route: captcha/validate]
+in APPPATH\Controllers\CaptchaController.php on line 43.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CaptchaController->validateCaptcha()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CaptchaController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jwt_authentication\\public\\index.php')
+CRITICAL - 2024-10-18 07:07:39 --> Error: Call to a member function getValue() on string
+[Method: POST, Route: captcha/validate]
+in APPPATH\Controllers\CaptchaController.php on line 43.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CaptchaController->validateCaptcha()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CaptchaController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jwt_authentication\\public\\index.php')
+CRITICAL - 2024-10-18 07:16:30 --> Error: Call to a member function getValue() on string
+[Method: POST, Route: captcha/validate]
+in APPPATH\Controllers\CaptchaController.php on line 42.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CaptchaController->validateCaptcha()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CaptchaController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jwt_authentication\\public\\index.php')
+CRITICAL - 2024-10-18 07:23:28 --> Error: Call to undefined method App\Controllers\CaptchaController::validateJWT()
+[Method: POST, Route: captcha/validate]
+in APPPATH\Controllers\CaptchaController.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CaptchaController->validateCaptcha()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CaptchaController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\jwt_authentication\\public\\index.php')

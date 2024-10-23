@@ -9,6 +9,9 @@ use CodeIgniter\Router\RouteCollection;
 
 $routes->post('register', 'UserController::register');
 $routes->post('login', 'UserController::login');
+$routes->post('captcha/generate', 'CaptchaController::generatecaptcha');
+$routes->post('captcha/validate', 'CaptchaController::validateCaptcha');
+
 $routes->get('admin','AdminController::Admindashboard');
 $routes->get('user','AdminController::UserDashboard');
 $routes->post('admin/add', 'AdminController::addUser');                
